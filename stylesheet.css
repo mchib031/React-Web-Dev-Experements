@@ -11,3 +11,26 @@ nav {
   min-height: 8vh;
   background-color: black;
 }
+
+.logo{
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 20px;
+}
+
+.nav-links{
+  display: flex;
+  width: 40%;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.nav-links a{
+  color: white;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 14px;
+  font-family: sans-serif;
+}
