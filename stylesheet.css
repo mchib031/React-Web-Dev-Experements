@@ -58,6 +58,7 @@ nav {
 }
 
 .container{
+  display: flex;
   position: relative;
   width: 50%;
   height: 100%;
