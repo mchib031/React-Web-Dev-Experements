@@ -27,9 +27,87 @@
             </li>
           </ul>
   </nav>
-                <div id="footer" >
-                Survey Designed by Raphael Productions
+<div class="container">
+<div class="main">
+  <form>
+
+                <div class="form">
+                    <label for="role" id="label-role">
+                        1. What do you think about the way the information was presented?
+                    </label>
+
+                    <select name="role" id="role">
+                        <option value="select">Select answer</option>
+                        <option value="clear">Clear</option>
+                        <option value="good">Good</option>
+                        <option value="confusing">Confusing</option>
+                    </select>
                 </div>
+
+                <div class="form">
+                    <label for="name" id="label-name">
+                        3. How do you think we can improve the functionality of the website?
+                    </label>
+                    <input type="text" id="name" placeholder="Enter your answer" />
+                </div>
+
+
+                <div class="form">
+                    <label>
+                      2. Choose the most convenient description for our interface.
+                    </label>
+                    <label for="inp-1">
+                        <input type="checkbox" name="inp"> Easy to navigate</input></label>
+                    <label for="inp-2">
+                        <input type="checkbox" name="inp"> Hard to navigate</input></label>
+                    <label for="inp-3">
+                        <input type="checkbox" name="inp"> Good animation flow</input></label>
+                    <label for="inp-4">
+                        <input type="checkbox" name="inp"> Reasonable selection of colors</input></label>
+                    <label for="inp-5">
+                        <input type="checkbox" name="inp"> Flexible layout</input></label>
+                </div>
+
+
+
+
+                <div class="form">
+                    <label>
+                        4. Did our website work like you intended?
+                    </label>
+                    <label for="recommed-1">
+                        <input type="radio" id="recommed-1" name="recommed"> Yes</input>
+                    </label>
+
+                    <label for="recommed-2">
+                        <input type="radio" id="recommed-3" name="recommed"> No</input>
+                    </label>
+                    <label for="name" id="label-name">
+                        If yes, can you explain what happened to help us fix it.
+                    </label>
+                    <input type="text" id="name" placeholder="Enter your answer" />
+                </div>
+
+
+
+
+                <div class="form">
+                    <label for="comment">
+                        5. Are there any comments that can help us improve the usability?
+                    </label>
+                    <input type="text" id="name" placeholder= "Feedback" />
+                    <button type="submit" value="submit">Submit</button>
+                </div>
+
+            </form>
+</div>
+</div>
+<footer>
+    <div class="credits">
+      Survey Designed by Raphael Productions
+    </div>
+</footer>
+
 </body>
 
 </html>
