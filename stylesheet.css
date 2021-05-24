@@ -18,7 +18,16 @@ nav {
   background-color: black;
 }
 
-.logo{
+.ui{
+  padding: 50px;
+}
+
+.uiss{
+  width: 100%;
+}
+
+.logo a{
+  text-decoration: none;
   color: white;
   text-transform: uppercase;
   letter-spacing: 3px;
