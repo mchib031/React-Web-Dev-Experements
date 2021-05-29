@@ -104,6 +104,10 @@ nav {
     font-size: 20px;
 }
 
+.form select{
+  color: black;
+}
+
 .form option{
   color: black;
 }
