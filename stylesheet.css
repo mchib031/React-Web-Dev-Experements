@@ -108,6 +108,10 @@ nav {
   color: black;
 }
 
+.form input{
+  color: black;
+}
+
 
 .form input[type="radio"]{
     display: inline-block;
