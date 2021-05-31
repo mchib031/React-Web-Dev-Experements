@@ -1,0 +1,108 @@
+/* This style sheet is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp> */
+
+/* Style the tab */
+html{
+  height: 100%;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+  font-family: 'arial';
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+
+.tab h1 {
+  text-decoration: none;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 25px;
+  padding: 5px;
+}
+
+.tab button {
+  font-size: large;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  color: #333;
+  font-size: 25px;
+  background-color: inherit;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  background:#333;
+  color: white;
+  margin: 50px;
+  padding: 50px;
+  width:90%;
+  font-size: 25px;
+  text-align: left;
+  display: none;
+  border-radius: 10px;
+}
+
+.tabcontent button{
+  font-size: large;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: white;
+  color: #333;
+  margin: 20px;
+}
+
+select {
+  padding: 10px;
+  padding-right: 40px;
+  margin: 10px;
+}
+
+option {
+  font-size: 20px;
+}
+
+#products {
+  display: flex;
+  flex-direction: row;
+}
+
+input {
+
+    width:30px;
+    height:25px;
+    background:white;
+    border-radius:4px;
+    border:2px solid;
+}
+
+footer {
+  background: #333;
+  color: white;
+  padding: 3em;
+
+  margin-top: auto;
+}
