@@ -12,9 +12,9 @@ var products = [
 	},
 	{
 		name: "Apple",
-		Organic:false,
 		LactoseFree: true,
 		NutFree: true,
+		Organic:false,
 		price: 2
 	},
 	{
@@ -33,16 +33,16 @@ var products = [
 	},
 	{
 		name: "Bread",
-		Organic:true,
 		LactoseFree: false,
 		NutFree: false,
+		Organic:true,
 		price: 2.35
 	},
 	{
 		name: "Tomato",
-		Organic:true,
 		LactoseFree: true,
 		NutFree: true,
+		Organic:true,
 		price: 4
 	},
 	{
@@ -54,9 +54,9 @@ var products = [
 	},
 	{
 		name: "Cheese",
-		Organic:false,
 		LactoseFree: false,
 		NutFree: true,
+		Organic:false,
 		price: 3
 	},
 	{
@@ -68,9 +68,9 @@ var products = [
 	},
 	{
 		name: "Honey",
-		Organic:false,
 		LactoseFree: true,
 		NutFree: false,
+		isOrganic:false,
 		price: 7
 	}
 
@@ -81,55 +81,22 @@ var products = [
 // given restrictions provided, make a reduced list of products
 // prices should be included in this list, as well as a sort based on price
 
-function isOrganic() {
-
-	var organicTest = false;
-	var cb = document.getElementById("isorganic");
-	var text = document.getElementById("msg");
-
-	if (cb.checked==true) {
-		organicTest = true;
-	}
-	else {
-		organicTest = false;
-	}
-	return organicTest;
-}
-
 function restrictListProducts(prods, restriction) {
-
-	var organicTest = isOrganic();
 	let product_names = [];
-
 	for (let i=0; i<prods.length; i+=1) {
-		if (organicTest == true) {
-			if (prods[i].Organic == false) {
-				continue;
-			}
-		}
 		if ((restriction == "NutFree") && (prods[i].NutFree == true)){
-			product_names.push(prods[i]);
+			product_names.push(prods[i].name);
 		}
 		else if ((restriction == "LactoseFree") && (prods[i].LactoseFree == true)){
-			product_names.push(prods[i]);
+			product_names.push(prods[i].name);
+		}
+		else if ((restriction == "Organic") && (prods[i].Organic == true)){
+			product_names.push(prods[i].name);
 		}
 		else if (restriction == "None"){
-			product_names.push(prods[i]);
+			product_names.push(prods[i].name);
 		}
 	}
-
-// Sorting products with prices
-
-	for (let j = 0; j < prods.length; j++) {
-		var k = j;
-		while (k > 0 && prods[k-1].price > prods[k].price) {
-			var tmp = prods[k];
-			prods[k] = prods[k-1];
-			prods[k-1] = tmp;
-			k = k-1;
-		}
-	}
-
 	return product_names;
 }
 
