@@ -293,6 +293,12 @@ body{
   display: flex;
 }
 
+small {
+  font-size: 12px;
+  font-weight: lighter;
+  font-style: italic;
+}
+
 footer {
   background: #0b312c;
   color: white;
