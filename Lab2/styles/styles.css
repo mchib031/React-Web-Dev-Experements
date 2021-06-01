@@ -83,6 +83,10 @@ body{
   padding-right: 50px;
 }
 
+.displayProd{
+
+}
+
 .tabcontent button{
   font-size: large;
   padding: 10px;
@@ -107,6 +111,16 @@ body{
   left: 0;
   z-index: 1;
   opacity: 0;
+}
+
+.displayProd{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.displayProd .option_item{
+  display: flex;
+  margin: 20px;
 }
 
 .option_item .option_inner {

@@ -1,10 +1,11 @@
-	 
+
 
 const selectedRestrictions = new Set()
 
 var products = [
 	{
 		name: "Brocoli",
+		picture: "pictures/brocoli.jpg",
 		LactoseFree: true,
 		NutFree: true,
 		isOrganic:true,
@@ -12,6 +13,7 @@ var products = [
 	},
 	{
 		name: "Bread",
+		picture: "pictures/bread.jpg",
 		LactoseFree: false,
 		NutFree: false,
 		isOrganic:true,
@@ -19,6 +21,7 @@ var products = [
 	},
 	{
 		name: "Tomato",
+		picture: "pictures/tomato.jpg",
 		LactoseFree: true,
 		NutFree: true,
 		isOrganic:true,
@@ -26,6 +29,7 @@ var products = [
 	},
 	{
 		name: "Organic Cheese",
+		picture: "pictures/organic_cheese.jpg",
 		LactoseFree: false,
 		NutFree: true,
 		isOrganic:true,
@@ -33,6 +37,7 @@ var products = [
 	},
 	{
 		name: "Cheese",
+		picture: "pictures/cheese.jpg",
 		LactoseFree: false,
 		NutFree: true,
 		isOrganic:false,
@@ -40,6 +45,7 @@ var products = [
 	},
 	{
 		name: "Salmon",
+		picture: "pictures/salmon.jpg",
 		LactoseFree: true,
 		NutFree: true,
 		isOrganic:true,
@@ -47,6 +53,7 @@ var products = [
 	},
 	{
 		name: "Apple",
+		picture: "pictures/apple.jpg",
 		LactoseFree: true,
 		NutFree: true,
 		isOrganic:false,
@@ -54,6 +61,7 @@ var products = [
 	},
 	{
 		name: "Milk",
+		picture: "pictures/milk.jpg",
 		LactoseFree: false,
 		NutFree: true,
 		isOrganic:true,
@@ -61,6 +69,7 @@ var products = [
 	},
 	{
 		name: "Almonds",
+		picture: "pictures/almonds.jpg",
 		LactoseFree: true,
 		NutFree: false,
 		isOrganic:true,
@@ -68,6 +77,7 @@ var products = [
 	},
 	{
 		name: "Rice",
+		picture: "pictures/rice.jpg",
 		LactoseFree: true,
 		NutFree: true,
 		isOrganic:false,
@@ -75,6 +85,7 @@ var products = [
 	},
 	{
 		name: "Honey",
+		picture: "pictures/honey.jpg",
 		LactoseFree: true,
 		NutFree: false,
 		isOrganic:false,
@@ -82,6 +93,7 @@ var products = [
 	},
 	{
 		name: "Avacado",
+		picture: "pictures/avocado.jpg",
 		LactoseFree: true,
 		NutFree: true,
 		isOrganic:false,
@@ -89,6 +101,7 @@ var products = [
 	},
 	{
 		name: "Strawberry",
+		picture: "pictures/strawberry.jpg",
 		LactoseFree: true,
 		NutFree: true,
 		isOrganic:true,
@@ -96,13 +109,14 @@ var products = [
 	},
 	{
 		name: "Banana",
+		picture: "pictures/banana.jpg",
 		LactoseFree: true,
 		NutFree: true,
 		isOrganic:true,
 		price: 1.23
 	},
 ];
-	
+
 
 function restrictListProducts(prods) {
 	let filteredProducts = [];
