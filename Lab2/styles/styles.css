@@ -12,7 +12,7 @@ html{
 }
 
 body{
-  background: #585c68;
+  background: #bac45a;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -26,10 +26,10 @@ body{
 
 .tab {
   overflow: hidden;
-  background-color: #656565;
+  background-color: #6d2829;
   display: block;
   color: white;
-  box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+  box-shadow: 0 5px 8px rgba(0,0,0,0.9);
 }
 
 .tab h1 {
@@ -56,11 +56,11 @@ body{
 }
 
 .tab button:hover {
-  background-color: #a9a9a9;
+  background-color: #f4595d;
 }
 
 .tab button.active {
-  background-color: #333;
+  background-color: #ca303b;
 }
 
 .wrapper {
@@ -68,7 +68,7 @@ body{
 }
 
 .tabcontent {
-  background:#FBCEB1;
+  background:#ffbe9f;
   color: white;
   margin: 50px;
   padding: 50px;
@@ -154,6 +154,7 @@ body{
   width: 120%;
   transition: 0.8s;
 }
+
 
 .option_item:hover .boxtext{
   opacity: 1;
@@ -289,9 +290,10 @@ body{
 }
 
 footer {
-  background: #333;
+  background: #0b312c;
   color: white;
   padding: 3em;
   margin-top: auto;
   text-align: right;
+  box-shadow: 0 -5px 10px rgba(0,0,0,0.9);
 }
