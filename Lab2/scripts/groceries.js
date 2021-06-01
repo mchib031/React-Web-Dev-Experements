@@ -9,7 +9,7 @@ var products = [
 		LactoseFree: true,
 		NutFree: true,
 		isOrganic:true,
-		price: 1.99
+		price: 2.00
 	},
 	{
 		name: "Bread",
@@ -25,7 +25,7 @@ var products = [
 		LactoseFree: true,
 		NutFree: true,
 		isOrganic:true,
-		price: 3.90
+		price: 4.00
 	},
 	{
 		name: "Organic Cheese",
@@ -89,7 +89,7 @@ var products = [
 		LactoseFree: true,
 		NutFree: false,
 		isOrganic:false,
-		price: 5.99
+		price: 4.00
 	},
 	{
 		name: "Avacado",
@@ -97,7 +97,7 @@ var products = [
 		LactoseFree: true,
 		NutFree: true,
 		isOrganic:false,
-		price: 3.99
+		price: 4.00
 	},
 	{
 		name: "Strawberry",
