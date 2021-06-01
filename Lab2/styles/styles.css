@@ -289,6 +289,10 @@ body{
   background-color: #333;
 }
 
+#homepage {
+  display: flex;
+}
+
 footer {
   background: #0b312c;
   color: white;
