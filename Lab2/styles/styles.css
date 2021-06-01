@@ -299,6 +299,21 @@ small {
   font-style: italic;
 }
 
+#checkout {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+#checkout h3,p{
+  margin: 20px;
+}
+
+#checkout img {
+  width: 70px;
+}
+
 footer {
   background: #0b312c;
   color: white;
