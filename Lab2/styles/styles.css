@@ -52,16 +52,15 @@ body{
   color: white;
   font-size: 25px;
   background-color: inherit;
-
+  right: auto;
 }
 
 .tab button:hover {
   background-color: #a9a9a9;
-
 }
 
 .tab button.active {
-  background-color: #000000;
+  background-color: #333;
 }
 
 .wrapper {
@@ -74,8 +73,11 @@ body{
   margin: 50px;
   padding: 50px;
   display: none;
+  justify-content: space-between;
+  align-items: center;
   box-shadow: 0 10px 10px rgba(0,0,0,0.5);
   flex-wrap: wrap;
+  max-width: 1500px;
 }
 
 .introduction{
@@ -88,20 +90,6 @@ body{
 #info {
   padding-right: 50px;
 }
-
-.displayProd{
-
-}
-
-.tabcontent button{
-  font-size: large;
-  padding: 10px;
-  border-radius: 5px;
-  background-color: white;
-  color: #333;
-  margin: 20px;
-}
-
 
 .tabcontent .option_item {
   display: block;
@@ -281,9 +269,29 @@ body{
   overflow: hidden;
 }
 
+.tabcontent button{
+  border: 1px solid #333;
+  background: none;
+  padding: 50px 30px;
+  font-size: 20px;
+  font-family: "montserrat";
+  cursor: pointer;
+  margin: 10px;
+  transition: 0.8s;
+  position: relative;
+  overflow: hidden;
+  color: #333;
+}
+
+.tabcontent button:hover {
+  color: #fff;
+  background-color: #333;
+}
+
 footer {
   background: #333;
   color: white;
   padding: 3em;
   margin-top: auto;
+  text-align: right;
 }
