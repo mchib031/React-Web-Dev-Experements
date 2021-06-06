@@ -55,6 +55,13 @@ function selectedRes() {
 	openInfo(event, "Products");
 }
 
+function openAll(){
+	var all = document.querySelectorAll('[title="type"]');
+	for (var i = 0; i < all.length; i++) {
+		all[i].style.display = "flex";
+	}
+}
+
 function openCarbs() {
 	hideElems();
 	for (var i = 0; i < carbs.length; i++) {
@@ -162,7 +169,6 @@ function renderProductList(optionArray){
 		var productType = sortedOptionArray[i].type;
 
 		var type = document.createElement('div');
-		type.style.display = "none";
 		type.title = "type";
 		if (productType == "Fruit") {
 			type.className = "Fruits";
