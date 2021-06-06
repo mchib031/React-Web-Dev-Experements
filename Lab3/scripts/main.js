@@ -205,7 +205,6 @@ function renderProductList(optionArray){
 			type.className = "Vietnamese";
 		}
 
-
 	  var checkbox = document.createElement("input");
 	  checkbox.type = "checkbox";
 		checkbox.className = "checkbox";
