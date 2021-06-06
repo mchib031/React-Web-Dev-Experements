@@ -21,7 +21,7 @@ function openInfo(evt, tabName) {
 		tablinks[i].className = tablinks[i].className.replace(" active", "");
 	}
 
-	if (tabName == "Products") {
+	if (tabName == "Products" || tabName == "Client") {
 		document.getElementById(tabName).style.display = "block";
 	}
 	else {
@@ -207,8 +207,8 @@ function renderProductList(optionArray){
 		var h2 = document.createElement("h2");
 		h2.appendChild(document.createTextNode(`${productName} - $${formattedPrice}`));
 		prodtext.appendChild(h2);
-		optioninner.appendChild(tick);
 		optioninner.appendChild(icon);
+		optioninner.appendChild(tick);
 		optioninner.appendChild(prodtext);
 
 		label.appendChild(optioninner);

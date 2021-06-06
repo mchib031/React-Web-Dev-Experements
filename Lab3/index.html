@@ -29,11 +29,12 @@
 			<p>Do you have any food <br> restrictions?</p><br>
 			<b>Choose a Category:</b> <p><small>(if you have no restrictions move on to products)</small></p>
 		</div>
+		<div class="restrict">
     <label class="option_item">
       <input type="checkbox" class="checkbox" id="lactose-free" name="lactose-free" value="Lactose-Free" onchange="populateListProductChoices(this.id)">
       <div class="option_inner lactosefree">
+				<div class="icon"><img src="pictures/lactosefree.jpg" alt=""></div>
         <div class="tickmark"></div>
-        <div class="icon"><img src="pictures/lactosefree.jpg" alt=""></div>
 				<div class="boxtext">
           <h2>Lactose-Free</h2>
         </div>
@@ -42,8 +43,8 @@
     <label class="option_item">
       <input type="checkbox" class="checkbox" id="nut-free" name="nut-free" value="Nut-Free" onchange="populateListProductChoices(this.id)">
       <div class="option_inner nutfree">
+				<div class="icon"><img src="pictures/nutfree.jpg" alt=""></div>
         <div class="tickmark"></div>
-        <div class="icon"><img src="pictures/nutfree.jpg" alt=""></div>
 				<div class="boxtext">
           <h2>Nut-Free</h2>
         </div>
@@ -52,15 +53,16 @@
     <label class="option_item">
       <input type="checkbox" class="checkbox" id="organic" name="organic" value="Organic" onchange="populateListProductChoices(this.id)">
       <div class="option_inner organic">
+				<div class="icon"><img src="pictures/organic.jpg" alt=""></div>
         <div class="tickmark"></div>
-        <div class="icon"><img src="pictures/organic.jpg" alt=""></div>
 				<div class="boxtext">
           <h2>Organic</h2>
         </div>
       </div>
     </label>
+		</div>
 		<button id="selectrestrictions" type="button" class="block" onclick="selectedRes()">
- 		<b>Select restrictions</b>
+ 		<b>Select your current restrictions</b>
  	</button>
   </div>
 
