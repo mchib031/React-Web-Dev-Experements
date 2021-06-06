@@ -12,7 +12,7 @@ html{
 }
 
 body{
-  background: #bac45a;
+  background: #96ACB7;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -31,7 +31,7 @@ body{
 }
 
 .tabcontent {
-  background:#ffbe9f;
+  background:#D4E4BC;
   color: white;
   margin: 50px;
   padding: 50px;
@@ -312,7 +312,7 @@ small {
 
 .tab {
   overflow: hidden;
-  background-color: #6d2829;
+  background-color: #36558F;
   display: block;
   color: white;
   box-shadow: 0 5px 8px rgba(0,0,0,0.9);
@@ -342,15 +342,15 @@ small {
 }
 
 .tab button:hover {
-  background-color: #f4595d;
+  background-color: #7A97CD;
 }
 
 .tab button.active {
-  background-color: #ca303b;
+  background-color: #5C80C1;
 }
 
 footer {
-  background: #0b312c;
+  background: #40376E;
   color: white;
   padding: 3em;
   margin-top: auto;
