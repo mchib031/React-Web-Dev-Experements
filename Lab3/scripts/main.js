@@ -8,6 +8,7 @@ var veg = document.getElementsByClassName("Vegetables");
 var dairy = document.getElementsByClassName("Dairy");
 var fats = document.getElementsByClassName("Fats");
 var carbs = document.getElementsByClassName("Carbs");
+var viet = document.getElementsByClassName("Vietnamese");
 
 function openInfo(evt, tabName) {
 
@@ -104,6 +105,15 @@ function openFat() {
 	}
 }
 
+function openViet() {
+	hideElems();
+	for (var i = 0; i < viet.length; i++) {
+		viet[i].style.display = "flex";
+	}
+}
+
+
+
 function hideElems() {
 	for (var i = 0; i < fruits.length; i++) {
 		fruits[i].style.display = "none";
@@ -122,6 +132,9 @@ function hideElems() {
 	}
 	for (var i = 0; i < carbs.length; i++) {
 		carbs[i].style.display = "none";
+	}
+	for (var i = 0; i < viet.length; i++) {
+		viet[i].style.display = "none";
 	}
 }
 
@@ -148,7 +161,7 @@ function selectedItems(){
 	c.appendChild(document.createTextNode("Total Price is: " + getTotalPrice(chosenProducts)+" $"));
 
 	openInfo(event, "Cart");
- 
+
 }
 
 function priceFilter(a,b){

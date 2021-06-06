@@ -129,6 +129,42 @@ var products = [
 		type : "Fruit",
 		price: 1.50
 	},
+	{
+		name: "Pho",
+		picture: "pictures/pho.jpg",
+		LactoseFree: true,
+		NutFree: true,
+		isOrganic:true,
+		type : "Vietnamese",
+		price: 9.50
+	},
+	{
+		name: "Cha Ca",
+		picture: "pictures/chaca.jpg",
+		LactoseFree: true,
+		NutFree: true,
+		isOrganic:true,
+		type : "Vietnamese",
+		price: 7.50
+	},
+	{
+		name: "Cao Lau",
+		picture: "pictures/caolau.jpg",
+		LactoseFree: true,
+		NutFree: true,
+		isOrganic:true,
+		type : "Vietnamese",
+		price: 10.50
+	},
+	{
+		name: "Banh khot",
+		picture: "pictures/banhkhot.jpg",
+		LactoseFree: true,
+		NutFree: true,
+		isOrganic:true,
+		type : "Vietnamese",
+		price: 14.00
+	},
 ];
 
 
