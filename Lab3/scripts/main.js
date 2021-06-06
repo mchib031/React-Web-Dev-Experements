@@ -148,7 +148,7 @@ function selectedItems(){
 	c.appendChild(document.createTextNode("Total Price is: " + getTotalPrice(chosenProducts)+" $"));
 
 	openInfo(event, "Cart");
-
+ 
 }
 
 function priceFilter(a,b){
