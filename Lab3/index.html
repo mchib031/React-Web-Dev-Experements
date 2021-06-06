@@ -1,113 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<! This style sheet is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp>
-	<meta charset="UTF-8">
-	<title>The Corner Store</title>
-	<link rel="stylesheet" href="styles/styles.css">
-</head>
-<body>
-
-	<div class="tab" >
-			<h1>The Corner Store</h1>
-	    <button class="tablinks" onclick="openInfo(event, 'Client')">Personal Info</button>
-	    <button class="tablinks" onclick="openInfo(event, 'Products')">Products</button>
-	    <button class="tablinks" onclick="openInfo(event, 'Cart')">Cart</button>
-	  </div>
-
-<div class="wrapper">
-	<div id="homepage" class="tabcontent">
-		<div id="info" class="introduction">
-			<h3>THE CORNER STORE</h3>
-			<br>
- 			<p>Please use the 3 options provided in the menu to set your personal restrictions, choose items and check your cart. Thank you!</p>
-		</div>
-	</div>
-  <div id="Client" class="tabcontent">
-		<div id="info" class="introduction">
-			<h3>Client Information</h3><br>
-			<p>Do you have any food <br> restrictions?</p><br>
-			<b>Choose a Category:</b> <p><small>(if you have no restrictions move on to products)</small></p>
-		</div>
-		<div class="restrict">
-    <label class="option_item">
-      <input type="checkbox" class="checkbox" id="lactose-free" name="lactose-free" value="Lactose-Free" onchange="populateListProductChoices(this.id)">
-      <div class="option_inner lactosefree">
-				<div class="icon"><img src="pictures/lactosefree.jpg" alt=""></div>
-        <div class="tickmark"></div>
-				<div class="boxtext">
-          <h2>Lactose-Free</h2>
-        </div>
-      </div>
-    </label>
-    <label class="option_item">
-      <input type="checkbox" class="checkbox" id="nut-free" name="nut-free" value="Nut-Free" onchange="populateListProductChoices(this.id)">
-      <div class="option_inner nutfree">
-				<div class="icon"><img src="pictures/nutfree.jpg" alt=""></div>
-        <div class="tickmark"></div>
-				<div class="boxtext">
-          <h2>Nut-Free</h2>
-        </div>
-      </div>
-    </label>
-    <label class="option_item">
-      <input type="checkbox" class="checkbox" id="organic" name="organic" value="Organic" onchange="populateListProductChoices(this.id)">
-      <div class="option_inner organic">
-				<div class="icon"><img src="pictures/organic.jpg" alt=""></div>
-        <div class="tickmark"></div>
-				<div class="boxtext">
-          <h2>Organic</h2>
-        </div>
-      </div>
-    </label>
-		</div>
-		<button id="selectrestrictions" type="button" class="block" onclick="selectedRes()">
- 		<b>Select your current restrictions</b>
- 	</button>
-  </div>
-
-	<div id="Products" class="tabcontent">
-		<div id="prod" class="introduction">
-			<h3>Your targeted products</h3><br>
- 			<p>We preselected products based on your restrictions</p>
-			<p>Choose items to buy:</p>
-
-		</div>
-		<br>
+	<head>
+		<! This style sheet is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp>
+		<meta charset="UTF-8">
+		<title>The Corner Store</title>
+		<link rel="stylesheet" href="styles/styles.css">
+	</head>
+	<body>
 		<div class="tab" >
-				<button class="tablinks" onclick="openAll()">All Products</button>
-				<button class="tablinks" onclick="openFruits()">Fruits</button>
-				<button class="tablinks" onclick="openVeg()">Vegetables</button>
-				<button class="tablinks" onclick="openDairy()">Dairy</button>
-				<button class="tablinks" onclick="openProtein()">Proteins</button>
-				<button class="tablinks" onclick="openFat()">Fats</button>
-				<button class="tablinks" onclick="openCarbs()">Carbs</button>
-				<button class="tablinks" onclick="openViet()">Vietnamese Food Delivery</button>
-			</div>
-	<div id="displayProduct" class="displayProd"></div>
-	 <br/>
-	 <button id="addCart" type="button" class="block" onclick="selectedItems()">
-		<b>Add selected items to cart</b>
-	</button>
-	</div>
-
-	<div id="Cart" class="tabcontent">
-		<div id="checkout" class="introduction">
-			<h3>Cart <br> <img src="pictures/cart.png" alt=""> </h3>
-		  <p>Here is your cart.</p>
-			<div id="displayCart"></div>
+			<h1>The Corner Store</h1>
+			<button class="tablinks" onclick="openInfo(event, 'Client')">Personal Info</button>
+			<button class="tablinks" onclick="openInfo(event, 'Products')">Products</button>
+			<button class="tablinks" onclick="openInfo(event, 'Cart')">Cart</button>
 		</div>
-		<br>
-	</div>
-
-</div>
-
-<footer>
-  Designed by <b>Raphael Productions</b>
-</footer>
-
-<script src="scripts/groceries.js"></script>
-<script src="scripts/main.js"></script>
-
-</body>
+		<div class="wrapper">
+			<div id="homepage" class="tabcontent">
+				<div id="info" class="introduction">
+					<h3>THE CORNER STORE</h3>
+					<br>
+					<p>
+						Please use the 3 options provided in the menu to set your personal restrictions, choose items and check your cart. Thank you!
+					</p>
+				</div>
+			</div>
+			<div id="Client" class="tabcontent">
+				<div id="info" class="introduction">
+					<h3>Client Information</h3>
+					<br>
+					<p>
+						Do you have any food
+						<br>
+						 restrictions?
+					</p>
+					<br>
+					<b>Choose a Category:</b>
+					<p>
+						<small>
+							(if you have no restrictions move on to products)
+						</small>
+					</p>
+				</div>
+				<div class="restrict">
+					<label class="option_item">
+						<input type="checkbox" class="checkbox" id="lactose-free" name="lactose-free" value="Lactose-Free" onchange="populateListProductChoices(this.id)">
+						<div class="option_inner lactosefree">
+							<div class="icon">
+								<img src="pictures/lactosefree.jpg" alt="">
+							</div>
+							<div class="tickmark"></div>
+							<div class="boxtext">
+								<h2>Lactose-Free</h2>
+							</div>
+						</div>
+					</label>
+					<label class="option_item">
+						<input type="checkbox" class="checkbox" id="nut-free" name="nut-free" value="Nut-Free" onchange="populateListProductChoices(this.id)">
+						<div class="option_inner nutfree">
+							<div class="icon">
+								<img src="pictures/nutfree.jpg" alt="">
+							</div>
+							<div class="tickmark"></div>
+							<div class="boxtext">
+								<h2>Nut-Free</h2>
+							</div>
+						</div>
+					</label>
+					<label class="option_item">
+						<input type="checkbox" class="checkbox" id="organic" name="organic" value="Organic" onchange="populateListProductChoices(this.id)">
+						<div class="option_inner organic">
+							<div class="icon">
+								<img src="pictures/organic.jpg" alt="">
+							</div>
+							<div class="tickmark"></div>
+							<div class="boxtext">
+								<h2>Organic</h2>
+							</div>
+						</div>
+					</label>
+				</div>
+				<button id="selectrestrictions" type="button" class="block" onclick="selectedRes()"><b>Select your current restrictions</b></button>
+			</div>
+			<div id="Products" class="tabcontent">
+				<div id="prod" class="introduction">
+					<h3>Your targeted products</h3>
+					<br>
+					<p>
+						We preselected products based on your restrictions
+					</p>
+					<p>
+						Choose items to buy:
+					</p>
+				</div>
+				<br>
+				<div class="tab" >
+					<button class="tablinks" onclick="openAll()">All Products</button>
+					<button class="tablinks" onclick="openFruits()">Fruits</button>
+					<button class="tablinks" onclick="openVeg()">Vegetables</button>
+					<button class="tablinks" onclick="openDairy()">Dairy</button>
+					<button class="tablinks" onclick="openProtein()">Proteins</button>
+					<button class="tablinks" onclick="openFat()">Fats</button>
+					<button class="tablinks" onclick="openCarbs()">Carbs</button>
+					<button class="tablinks" onclick="openViet()">Vietnamese Food Delivery</button>
+				</div>
+				<div id="displayProduct" class="displayProd"></div>
+				<br/>
+				<button id="addCart" type="button" class="block" onclick="selectedItems()"><b>Add selected items to cart</b></button>
+			</div>
+			<div id="Cart" class="tabcontent">
+				<div id="checkout" class="introduction">
+					<h3>
+						Cart
+						<br>
+						<img src="pictures/cart.png" alt="">
+					</h3>
+					<p>
+						Here is your cart.
+					</p>
+					<div id="displayCart"></div>
+				</div>
+				<br>
+			</div>
+		</div>
+		<footer>
+			  Designed by
+			<b>Raphael Productions</b>
+		</footer>
+		<script src="scripts/groceries.js"></script>
+		<script src="scripts/main.js"></script>
+	</body>
 </html>
