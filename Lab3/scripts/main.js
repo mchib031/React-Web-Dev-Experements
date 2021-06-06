@@ -201,6 +201,10 @@ function renderProductList(optionArray){
 		if (productType == "Dairy") {
 			type.className = "Dairy";
 		}
+		if (productType == "Vietnamese") {
+			type.className = "Vietnamese";
+		}
+
 
 	  var checkbox = document.createElement("input");
 	  checkbox.type = "checkbox";
