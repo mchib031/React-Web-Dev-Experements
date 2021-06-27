@@ -1,23 +1,25 @@
-function confirmBook() {
-  var jour = document.getElementById("dateInput").value;
-  var temps = document.getElementById("timeInput").value.split(':'),hours, minutes, midi;
-  hours = temps[0];
-  minutes = temps[1];
-  if (hours > 12) {
-    midi = 'PM';
-    hours -= 12;
-  } else if (hours < 12) {
-    midi = 'AM';
-    if (hours == 0) {
-      hours = 12;
-    }
-  } else {
-    midi = 'PM';
-  }
+  function confirmBook() {
 
-  alert("Your appointment was taken with " + $("#doctors option:selected").text() +
-  " on " + jour + " at " + hours + ':' + minutes + ' ' + midi);
-}
+    var date = document.getElementById("dateInput").value;
+    var time = document.getElementById("timeInput").value.split(':'),hours, minutes, meridiem;
+    hours = time[0];
+    minutes = time[1];
+
+    if (hours > 12) {
+      meridiem = 'PM';
+      hours -= 12;
+    } else if (hours < 12) {
+      meridiem = 'AM';
+      if (hours == 0) {
+        hours = 12;
+      }
+    } else {
+      meridiem = 'PM';
+    }
+
+    alert("You have booked your appointment with " + $("#doctors option:selected").text() +
+    " on " + date + " at " + hours + ':' + minutes + ' ' + meridiem);
+  }
 
 var unavailableDates = ["06/29/2020", "07/07/2020", "07/10/2020"];
 const setDateFormat = "mm/dd/yy";
@@ -57,8 +59,6 @@ function validatePhone(txtPhone) {
     return false;
   }
 }
-
-
 
 function validateCard(cardNum) {
   var a = document.getElementById(cardNum).value;
