@@ -21,20 +21,23 @@
     " on " + date + " at " + hours + ':' + minutes + ' ' + meridiem);
   }
 
-var unavailableDates = ["06/29/2020", "07/07/2020", "07/10/2020"];
-const setDateFormat = "mm/dd/yy";
+  var unavailableDates = ["06/29/2020", "07/07/2020", "07/10/2020"];
+  const setDateFormat = "mm/dd/yy";
 
-function disableDates(date) {
-  if ((date.getDay() === 1 || date.getDay() === 5) && $("#doctors option:selected").text() === "Dr. Rogan")
-    return [false];
+  function disableDates(date) {
+    if ((date.getDay() === 1 || date.getDay() === 5) && $("#doctors option:selected").text() === "Dr. Rogan")
+      return [false];
 
-  else if((date.getDay() === 4 || date.getDay() === 6) && $("#doctors option:selected").text() === "Dr. Smith")
-    return [false];
-  else if((date.getDay() === 2 || date.getDay() === 3) && $("#doctors option:selected").text() === "Dr. Rolands")
-    return [false];
-  var string = jQuery.datepicker.formatDate(setDateFormat, date);
-  return [unavailableDates.indexOf(string) === -1];
-}
+    else if((date.getDay() === 4 || date.getDay() === 6) && $("#doctors option:selected").text() === "Dr. Smith")
+      return [false];
+
+    else if((date.getDay() === 2 || date.getDay() === 3) && $("#doctors option:selected").text() === "Dr. Rolands")
+      return [false];
+
+    var string = jQuery.datepicker.formatDate(setDateFormat, date);
+    
+    return [unavailableDates.indexOf(string) === -1];
+  }
 
 function servicesSelect() {
   var form_data = new FormData(document.querySelector("form"));
